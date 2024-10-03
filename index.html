@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice and Bob Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Alice & Bob's Encryption Communication</h1>
+
+    <div class="container">
+        <!-- Alice's Section -->
+        <div class="person alice">
+            <h2>Alice</h2>
+            <textarea id="aliceMessage" placeholder="Alice's message to Bob"></textarea>
+            <input type="number" id="key" placeholder="Encryption key" min="0" max="25">
+            <button id="encryptBtn">Encrypt</button>
+            <p><strong>Encrypted message:</strong> <span id="encryptedMessage"></span></p>
+            <button id="sendBtn">Send to Bob</button>
+        </div>
+
+        <!-- Bob's Section -->
+        <div class="person bob">
+            <h2>Bob</h2>
+            <p><strong>Received encrypted message:</strong> <span id="receivedMessage"></span></p>
+            <button id="bruteForceBtn">Brute Force Decrypt</button>
+            <p><strong>Decrypted message (Brute Force):</strong></p>
+            <textarea id="decryptedMessage" rows="10" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
